@@ -1,0 +1,13 @@
+/* global QUnit */
+
+QUnit.config.autostart = false;
+
+sap.ui.getCore().attachInit(function () {
+	"use strict";
+
+	sap.ui.require([
+		"ns/ZCDSFA/test/integration/AllJourneys"
+	], function () {
+		QUnit.start();
+	});
+});
